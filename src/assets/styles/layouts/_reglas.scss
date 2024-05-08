@@ -1,5 +1,69 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+.article {
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+    background-image: url(../images/contest_article_01.jpg);     
+    background-size: cover;
+  }
 
+  &.rules__article {
+    margin: 50px 100px;
+  }
+}
+
+article > :is(blockquote, p) {
+  color: $nobootstrap-tertiary-color;
+}
+
+blockquote {
+  &.rules__quote-1 {
+  float: left;
+  width: 200px;
+  height: 100px; 
+  margin-right: 10px;
+  font-style: italic;
+  }
+  
+  &.rules__quote-2 {
+    margin-top: 50px;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+hr {
+  height: 5px;
+  margin-bottom: 50px;
+  color: $nobootstrap-secondary-color;
+}
+
+ol.rules__list {
+  padding-top: 20px;
+}
+
+div.article__image {
+  width: 50%;
+}
+
+h2:has(span) {
+  font-style: italic;
+}
+
+figcaption {
+  font-size: .8rem;
+  color: $nobootstrap-secondary-color;
+  text-transform: uppercase;
+}
+
+figcaption:has(figure) {
+  font-style: italic;
+}

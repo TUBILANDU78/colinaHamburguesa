@@ -1,118 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 50px;
+}
   
-    
-/** GOOGLE FONTS **/
-/* Fuente cabecera */
-.titan-one-regular {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.winners__table {
+  margin-top: 50px;
+}
+
+.contact {
+  &__container {
+    margin-top: 50px;
+    background-color: lch(89% 50 18);
   }
 
-/* Fuente resto web */
-.k2d-thin {
-    font-family: "K2D", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+  &__form {
+    padding: 30px 200px;
   }
-  
-  .k2d-extralight {
-    font-family: "K2D", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .k2d-light {
-    font-family: "K2D", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .k2d-regular {
-    font-family: "K2D", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .k2d-medium {
-    font-family: "K2D", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .k2d-semibold {
-    font-family: "K2D", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .k2d-bold {
-    font-family: "K2D", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .k2d-extrabold {
-    font-family: "K2D", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .k2d-thin-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .k2d-extralight-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .k2d-light-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .k2d-regular-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .k2d-medium-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .k2d-semibold-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .k2d-bold-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .k2d-extrabold-italic {
-    font-family: "K2D", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
 
+  &__form-control {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
+  &__form-control label {
+    display: block;
+    margin-bottom: 5px;
+    color: $nobootstrap-secondary-color;
+  }
 
+  &__form-control input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid lch(100% 132 360);
+    border-radius: 4px;
+  }
 
+  &__form-control input:focus {
+    border-color: #777;
+    outline: 0;
+  }
 
+  &__form-control.success input {
+    border-color: var(--success-color);
+  }
 
+  &__form-control.error input {
+    border-color: var(--error-color);
+  }
+
+  &__form-control small {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: none;
+    color: var(--error-color);
+    visibility: hidden;
+  }
+
+  &__form-control.error small {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  &__form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: lch(62% 41 269);
+    border: 2px solid lch(62% 41 269);
+    border-radius: 4px;
+  }
+}

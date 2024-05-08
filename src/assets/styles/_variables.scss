@@ -1,15 +1,11 @@
-@use "sass:color";
+$nobootstrap-primary-color: #f3a944;
+$nobootstrap-secondary-color: #0637f9;
+$nobootstrap-tertiary-color: #8e8b8d;
 
-$font-family-sans-serif: "K2D", sans-serif;
+$theme-colors: (
+  "primary":    #fd7e14,
+  "secondary":  #0d6efd,
+);
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
-
-
-/** BOOTSTRAP **/
-
-
-
+$card-title-color: #0637f9;
+$card-height: 80px;
